@@ -9,20 +9,29 @@
 #include <math.h>
 #include <ctype.h>
 
-int print_char(char c);
-int _printf(const char *format, ...);
-
 /**
- * struct printer - Struct format_types
- * @tester: The conversion specifier
- * @print: The function pointer
- *
+ * struct printer - structure includes specifier and function pointer
+ * @tester: conversion specifier
+ * @print: function pointer to print the conversion specifier
  */
 
 typedef struct printer
 {
 	char *tester;
-	void (*print)(va_list arg);
+	int (*print)(va_list args);
 } printer_t;
+
+int print_char(char c);
+int _printf(const char *format, ...);
+int print_char(va_list args);
+int print_string(va_list args);
+int print_formatted(const char *format, va_list args);
+int print_specifier(char format, va_list args);
+int print_invalid_specifier(char prev_format, char format, int count);
+int print_integer(va_list args);
+void print_integer_recursive(int num);
+int print_binary(va_list args);
+void print_binary_recursive(int num);
+int is_valid_char(char c);
 
 #endif /* MAIN_H */
