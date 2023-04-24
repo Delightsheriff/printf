@@ -21,7 +21,7 @@ typedef struct printer
 	int (*print)(va_list args);
 } printer_t;
 
-int print_char(char c);
+int print(char c);
 int _printf(const char *format, ...);
 int print_char(va_list args);
 int print_string(va_list args);
