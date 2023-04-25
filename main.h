@@ -32,6 +32,6 @@ int print_integer(va_list args);
 void print_integer_recursive(int num);
 int print_binary(va_list args);
 void print_binary_recursive(int num);
-int is_valid_char(char c);
+int is_valid_char(char variations);
 
 #endif /* MAIN_H */
