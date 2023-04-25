@@ -30,7 +30,7 @@ int print_specifier(char specifier, va_list args)
 		i++;
 
 	}
-	return (length);
+	return (len);
 }
 
 

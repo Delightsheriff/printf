@@ -27,7 +27,13 @@ int print_string(va_list args)
 
 	if (str == NULL)
 	{
-		print("(null)");
+		print('(');
+		print('n');
+		print('u');
+		print('l');
+		print('l');
+		print(')');
+
 		return (6);
 	}
 	while (str[len])
