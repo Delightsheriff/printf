@@ -4,7 +4,7 @@
  * print_binary - Prints an integer converted to binary
  * @args: A list of variadic arguments
  *
- * Return: The number of printed digits
+ * Return: Integer
  */
 int print_binary(va_list args)
 {
@@ -42,7 +42,7 @@ void print_binary_recursive(int num)
 {
 	unsigned int temp;
 
-	temp = a;
+	temp = num;
 
 	if (temp / 2)
 	{

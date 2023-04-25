@@ -10,9 +10,9 @@
 #include <ctype.h>
 
 /**
- * struct printer - structure includes specifier and function pointer
- * @tester: conversion specifier
- * @print: function pointer to print the conversion specifier
+ * struct printer - a structure representing a conversion specifier
+ * @tester: the conversion specifier
+ * @pr: function pointer to the print function the conversion specifier
  */
 
 typedef struct printer
@@ -27,7 +27,7 @@ int print_char(va_list args);
 int print_string(va_list args);
 int print_formatted(const char *format, va_list args);
 int print_specifier(char format, va_list args);
-int print_invalid_specifier(char prev_format, char format, int count);
+int print_invalid_specifier(char prev_specifier, char format, int count);
 int print_integer(va_list args);
 void print_integer_recursive(int num);
 int print_binary(va_list args);

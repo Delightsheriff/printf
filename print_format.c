@@ -16,7 +16,7 @@
  */
 int is_char_valid(char variation)
 {
-	char variations[] = {'c', 's', 'd', 'i', 'b', '%', '\0'};
+	char variations[] = {'c', 's', 'd', 'i', 'b', '%'};
 	int i = 0;
 
 	while (variations[i])

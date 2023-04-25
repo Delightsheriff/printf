@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-  * print_integer - Prints a integer
-  * @args: A list of variadic arguments
+  * print_integer - Prints an integer
+  * @args: variadic arguments
   *
-  * Return: The length of the string
+  * Return: integer
   */
 int print_integer(va_list args)
 {
@@ -13,9 +13,9 @@ int print_integer(va_list args)
 
 	j = va_arg(args, int);
 	i = j;
-	if (m < 0)
+	if (i < 0)
 	{
-		_write('-');
+		print('-');
 		i = i * -1;
 		j = i;
 		count += 1;
@@ -33,16 +33,16 @@ int print_integer(va_list args)
 
 /**
   * print_integer_recursive - Prints a integer
-  * @a: integer to print
+  * @num: integer to print
   *
   * Return: Nothing
   */
-void print_integer_recursive(int a)
+void print_integer_recursive(int num)
 {
 	unsigned int temp;
 
-	temp = a;
+	temp = num;
 	if (temp / 10)
 		print_integer_recursive(temp / 10);
-	_write(temp % 10 + '0');
-}
+	print(temp % 10 + '0');
+i}
