@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * is_char_valid - validates if the character is an allowed type
+ * is_valid_char - validates if the character is an allowed type
  * @variation: character to be compared
  *
  * This function validates if the input character is one of the allowed types:
@@ -14,7 +14,7 @@
  *
  * Return: - 1 if char is equal to an allowed type
  */
-int is_char_valid(char variation)
+int is_valid_char(char variation)
 {
 	char variations[] = {'c', 's', 'd', 'i', 'b', '%'};
 	int i = 0;
