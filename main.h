@@ -18,7 +18,7 @@
 typedef struct printer
 {
 	char *tester;
-	int (*print)(va_list args);
+	int (*pr)(va_list args);
 } printer_t;
 
 int print(char c);
